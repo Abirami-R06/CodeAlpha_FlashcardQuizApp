@@ -1,0 +1,160 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    background: white;
+    padding: 35px;
+    border-radius: 20px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.card-area {
+    margin-bottom: 20px;
+}
+
+.flashcard {
+    min-height: 230px;
+    border-radius: 15px;
+    background: #f7f7ff;
+    border: 2px solid #667eea;
+    padding: 35px 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.question {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+.answer {
+    font-size: 19px;
+    color: #667eea;
+    display: none;
+}
+
+.show-btn {
+    margin-top: 15px;
+    background: #667eea;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.show-btn:hover {
+    background: #5568d8;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.navigation button,
+.manage-buttons button {
+    border: none;
+    padding: 11px 18px;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #333;
+    color: white;
+}
+
+.navigation button:hover,
+.manage-buttons button:hover {
+    opacity: 0.85;
+}
+
+#cardNumber {
+    font-weight: bold;
+    color: #555;
+}
+
+.manage-section {
+    border-top: 1px solid #ddd;
+    padding-top: 25px;
+}
+
+.manage-section h2 {
+    margin-bottom: 15px;
+    color: #333;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+}
+
+.manage-buttons {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.manage-buttons button:first-child {
+    background: #28a745;
+}
+
+.manage-buttons button:nth-child(2) {
+    background: #ff9800;
+}
+
+.manage-buttons button:last-child {
+    background: #dc3545;
+}
+
+@media (max-width: 500px) {
+
+    .container {
+        padding: 20px;
+    }
+
+    .question {
+        font-size: 20px;
+    }
+
+    .navigation button {
+        padding: 9px 12px;
+    }
+}
